@@ -38,7 +38,7 @@ about:
   license_family: BSD
   summary: 'Traceback serialization library.'
   dev_url: https://github.com/ionelmc/python-tblib
-  doc_url: https://github.com/ionelmc/python-tblib
+  doc_url: https://python-tblib.readthedocs.io/en/latest/
 
 extra:
   recipe-maintainers:
