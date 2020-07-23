@@ -5,7 +5,7 @@ Home: https://github.com/ionelmc/python-tblib
 
 Package license: BSD 2-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Traceback serialization library.
 
@@ -116,5 +116,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@jrbourbeau](https://github.com/jrbourbeau/)
 * [@pmlandwehr](https://github.com/pmlandwehr/)
 
