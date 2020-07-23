@@ -1,8 +1,7 @@
 {% set name = "tblib" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 {% set compress_type = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "229bee3754cb5d98b4837dd5c4405e80cfab57cb9f93220410ad367f8b352344" %}
+{% set hash = "059bd77306ea7b419d4f76016aef6d7027cc8a0785579b5aad198803435f882c" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +10,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ compress_type }}
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   noarch: python
@@ -36,7 +35,7 @@ about:
   license_file: LICENSE
   license: BSD 2-Clause
   license_family: BSD
-  summary: 'Traceback serialization library.'
+  summary: Traceback serialization library.
   dev_url: https://github.com/ionelmc/python-tblib
   doc_url: https://python-tblib.readthedocs.io/en/latest/
 
