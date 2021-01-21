@@ -5,11 +5,13 @@ Home: https://github.com/ionelmc/python-tblib
 
 Package license: BSD 2-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tblib-feedstock/blob/master/LICENSE.txt)
 
 Summary: Traceback serialization library.
 
+Development: https://github.com/ionelmc/python-tblib
 
+Documentation: https://python-tblib.readthedocs.io/en/latest/
 
 Current build status
 ====================
