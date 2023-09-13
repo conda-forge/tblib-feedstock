@@ -1,45 +1,43 @@
 {% set name = "tblib" %}
-{% set version = "1.7.0" %}
-{% set compress_type = "tar.gz" %}
-{% set hash = "059bd77306ea7b419d4f76016aef6d7027cc8a0785579b5aad198803435f882c" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  sha256: {{ hash }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tblib-{{ version }}.tar.gz
+  sha256: a6df30f272c08bf8be66e0775fad862005d950a6b8449b94f7c788731d70ecd7
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
-
 
 requirements:
   host:
-    - python >=3.6
     - pip
-
+    - python >=3.7
   run:
-    - python >=3.6
+    - python >=3.7
 
 test:
   imports:
     - tblib
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/ionelmc/python-tblib
-  license_file: LICENSE
-  license: BSD 2-Clause
-  license_family: BSD
-  summary: Traceback serialization library.
-  dev_url: https://github.com/ionelmc/python-tblib
   doc_url: https://python-tblib.readthedocs.io/en/latest/
+  summary: Traceback serialization library.
+  license: BSD-2-Clause
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
     - pmlandwehr
     - jrbourbeau
+    - xhochy
