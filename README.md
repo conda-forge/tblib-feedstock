@@ -146,6 +146,5 @@ Feedstock Maintainers
 =====================
 
 * [@jrbourbeau](https://github.com/jrbourbeau/)
-* [@pmlandwehr](https://github.com/pmlandwehr/)
 * [@xhochy](https://github.com/xhochy/)
 
