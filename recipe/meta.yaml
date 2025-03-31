@@ -1,5 +1,5 @@
 {% set name = "tblib" %}
-{% set version = "3.0.0" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tblib-{{ version }}.tar.gz
-  sha256: 93622790a0a29e04f0346458face1e144dc4d32f493714c6c3dff82a4adb77e6
+  sha256: 06404c2c9f07f66fee2d7d6ad43accc46f9c3361714d9b8426e7f47e595cd652
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
