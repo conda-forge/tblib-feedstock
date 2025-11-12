@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tblib
-  version: 3.2.1
+  version: "3.2.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/tblib-${{ version }}.tar.gz
-  sha256: 846e274d0aeec822953251a3cbd3d840fd0ee7a5ec844d59ffbde7b056f9cd2b
+  sha256: e9a652692d91bf4f743d4a15bc174c0b76afc750fe8c7b6d195cc1c1d6d2ccec
 
 build:
   number: 0
